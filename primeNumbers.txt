@@ -1,0 +1,3 @@
+//prime numbers : pseudocode
+// sieve of eratosthesis
+
