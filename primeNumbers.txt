@@ -1,4 +1,4 @@
 //prime numbers : pseudocode
 // sieve of eratosthesis
-
-
+// one line of code per day idk LOL
+INPUT x
