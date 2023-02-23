@@ -1,4 +1,31 @@
 //prime numbers : pseudocode
 // sieve of eratosthesis
 // one line of code per day idk LOL
-INPUT x
+INPUT n
+primeNumber = []
+number_status[(n/32) +1]
+FOR i = 0 to n/32
+	number_status[i/32]=0
+NEXT i
+x = 0
+FOR i = 2 to n
+	IF ((number_status[i/32]) & (1<<i)) == 0 THEN
+		OUTPUT i
+		primeNumber[x] = i
+		x = x+1
+		FOR j = 2*i to n
+			j = i*k
+			number_status[j/32] |= 1<<j
+		NEXT k
+	ENDIF
+NEXT i 
+
+SIZE = find size of array
+
+FOR l = 0 to SIZE(primeNumber)
+	IF primeNumber[l] == n THEN
+		OUTPUT n + " is a prime number"
+	ELSE IF
+		OUTPUT n + " is not a prime number"
+	ENDIF	
+NEXT l 
