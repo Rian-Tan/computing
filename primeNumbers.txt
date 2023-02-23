@@ -21,11 +21,16 @@ FOR i = 2 to n
 NEXT i 
 
 SIZE = find size of array
+found = 0
 
 FOR l = 0 to SIZE(primeNumber)
 	IF primeNumber[l] == n THEN
-		OUTPUT n + " is a prime number"
-	ELSE IF
-		OUTPUT n + " is not a prime number"
+		found = 1
 	ENDIF	
 NEXT l 
+
+IF found == 1 THEN
+	OUTPUT n + " is a prime number"
+ELSE IF 
+	OUTPUT n + " is not a prime number"
+ENDIF
