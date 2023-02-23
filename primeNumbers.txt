@@ -15,7 +15,7 @@ FOR i = 2 to n
 		x = x+1
 		FOR j = 2*i to n
 			j = i*k
-			number_status[j/32] |= 1<<j
+			number_status[j/32] = number_status[j/32] | 1<<j
 		NEXT k
 	ENDIF
 NEXT i 
