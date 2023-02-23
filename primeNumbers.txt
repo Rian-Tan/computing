@@ -31,6 +31,6 @@ NEXT l
 
 IF found == 1 THEN
 	OUTPUT n + " is a prime number"
-ELSE IF 
+ELSE 
 	OUTPUT n + " is not a prime number"
 ENDIF
